@@ -110,6 +110,12 @@
     --fifth-color: #DF7861;
     --sixth-color: #76549A;
     --seventh-color: #D9D9D9;
+    /* Dark Mode */
+    --dark-primary-color: #5F85DB;
+    --dark-secondary-color: #90B8F8;
+    --dark-third-color: #353941;
+    --dark-fourth-color: #26282B;
+
     --bg-text-font-size: 8rem;
     --bg-text-font-weight: 700;
     --bg-text-color: var(--third-color);
@@ -120,6 +126,13 @@ body {
     background-color: var(--third-color)!important;
     font-family: 'Inter', sans-serif!important;
     overflow-x: hidden;
+}
+
+body.dark {
+    --primary-color: #5F85DB;
+    --secondary-color: #90B8F8;
+    --third-color: #353941;
+    --fourth-color: #26282B;
 }
 
 p {

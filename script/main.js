@@ -43,10 +43,13 @@ document.addEventListener("DOMContentLoaded", function() {
 //     else document.querySelector(".progress-bar").style.animation='';
 // }
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-       $('#navbar').addClass('fixed-top');
-    } else {
-       $('#navbar').removeClass('fixed-top');
-    }
-});
+
+// var nav = document.querySelector('#navbar');
+
+// window.addEventListener('scroll', function () {
+//     if (window.pageYOffset > 50) {
+//         nav.classList.add('fixed-top');
+//     } else {
+//         nav.classList.remove('fixed-top');
+//     }
+// });
