@@ -42,3 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
 //     else document.querySelector(".progress-bar").style.animation='';
 // }
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#navbar').addClass('fixed-top');
+    } else {
+       $('#navbar').removeClass('fixed-top');
+    }
+});

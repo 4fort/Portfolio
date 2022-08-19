@@ -11,10 +11,10 @@
   <title>Fort B.</title>
 </head>
 <body>
-  <main class="page-container">
+  <main class="page-container" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
 
   <!-- Navbar -->
-  <div class="container">
+  <div class="container fixed-top px-md-5" id="navbar">
     <nav class="navbar navbar-expand-md navbar-light">
       <a href="#" class="navbar-brand logo fs-3">Fort <span class="o-text-primary">B.</span></a>
       <button 
@@ -31,16 +31,16 @@
       <div class="collapse navbar-collapse" id="toggleMobileMenu">
         <ul class="navbar-nav ms-auto text-center">
           <li>
-            <a href="#" class="nav-link px-4">About</a>
+            <a href="#about" class="nav-link px-4">About</a>
           </li>
           <li>
-            <a href="#" class="nav-link px-4">Projects</a>
+            <a href="#projects" class="nav-link px-4">Projects</a>
           </li>
           <li>
-            <a href="#" class="nav-link px-4">Services</a>
+            <a href="#contact" class="nav-link px-4">Contact</a>
           </li>
           <li>
-            <a href="mailto:dexterfortbsilva@gmail.com" class="nav-link px-4 btn btn-success me-2 o-text-third font-monospace">dexterfortbsilva@gmail.com</a>
+            <a href="mailto:dexterfortbsilva@gmail.com" class="nav-link px-4 btn btn-success me-md-2 o-text-third font-monospace">dexterfortbsilva@gmail.com</a>
           </li>
         </ul>
       </div>
@@ -57,7 +57,7 @@
           <span class="hero-header-2 display-3">A <span class="hero-header-2-text"></span></span>
         </p>
         <p class="lead header-summary">
-          I am a Front-end Developer, UX/UI Designer, Video Editor, and a Gamer. Currently graduating SHS and becoming first year BSinT Student in NORSU. Check out my <a href="">projects</a>!
+          I am a Front-end Developer, UX/UI Designer, Video Editor, and a Gamer. Currently a first year BSinT Student in NORSU. Check out my <a href="#projects">projects</a>!
         </p>
       </div>
     </div>
@@ -68,13 +68,13 @@
         <a href="https://www.instagram.com/_4fort/" target="_blank" class="s-button m-3"><i class="bi bi-instagram"></i></a>
         <a href="#" target="_blank" class="s-button m-3"><i class="bi bi-wordpress"></i></a>
         <a href="https://github.com/4fort" target="_blank" class="s-button m-3"><i class="bi bi-github"></i></a>
-        <a href="#" target="_blank" class="s-button m-3"><i class="bi bi-stack-overflow"></i></a>
+        <a href="https://stackoverflow.com/users/11174070/dexter-silva" target="_blank" class="s-button m-3"><i class="bi bi-stack-overflow"></i></a>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="">
+  <section id="about">
     <div class="container">
       <div class="row align-items-center justify-content-between section-margin flex-md-row flex-column-reverse">
         <div class="col-md-7 about">
@@ -82,7 +82,7 @@
             A <b>Freelance Front-End Developer</b> based in the Philippines.
           </p>
           <p>
-            I’m Fort, an upcoming first year BSinT student of NORSU. I’m a front-end Web Developer, currently learning back-end and other Computer Programming languages, I am very interested in designing websites or UI/UX; I also edit Videos as I am also interested in Film Making. 
+            I’m Fort, a first year BSinT student of NORSU. I’m a front-end Web Developer, currently learning back-end and other Computer Programming languages, I am very interested in designing websites or UI/UX; I also edit Videos as I am also interested in Film Making. 
           </p>
         </div>
         <div class="col-md-5 justify-content-end align-self-center d-flex about-name mb-3 mb-md-0 ">
@@ -169,7 +169,7 @@
   </section>
 
   <!-- Projects -->
-  <section>
+  <section id="projects">
 
     <!-- Projects Title -->
     <div class="container">
@@ -187,48 +187,48 @@
           <a href="#" target="_blank">
           <div class="card h-100" style="max-width: 20rem;">
             <div class="card-body">
-              <i class="bi bi-folder2"></i>
-              <h5 class="card-title">PORTFOLIO</h5>
-              <p class="card-text">This web-based portfolio was built with Bootstrap to create reusable and custom components, and Tailwind CSS to ensure responsiveness of the design on various screen sizes.</p>
-              <span class="card-link font-monospace mt-auto">React JS, Tailwind CSS</span>
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">My Portfolio</h5>
+              <p class="card-text">A web-based portfolio built with Bootstrap for a responsive design on different screen sizes. Made with love by me.</p>
+              <span class="card-link font-monospace mt-auto">Bootstrap 5.2</span>
             </div>
           </div>
           </a>
         </div>
-  
+        <!-- Second Card -->
         <div class="col">
-          <a href="#" target="_blank">
+          <a href="https://github.com/4fort/taclobonationahighscool" target="_blank">
           <div class="card h-100" style="max-width: 20rem;">
             <div class="card-body">
-              <i class="bi bi-folder2"></i>
-              <h5 class="card-title">PORTFOLIO</h5>
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">School Website (unfinished)</h5>
+              <p class="card-text">This Website is a school activity that was tasked to us ICT students. Unfortunately due to the pandemic i wasn't able to finish this.</p>
+              <span class="card-link font-monospace mt-auto">Jquery</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Third Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/sini-gang" target="_blank">
+          <div class="card h-100" style="max-width: 20rem;">
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">Sini-gang</h5>
               <p class="card-text">This web-based portfolio was built using React JS to create reusable and custom components, and Tailwind CSS to ensure responsiveness of the design on various screen sizes.</p>
               <span class="card-link font-monospace mt-auto">React JS, Tailwind CSS</span>
             </div>
           </div>
           </a>
         </div>
-
+        <!-- Fourth Card -->
         <div class="col">
-          <a href="#" target="_blank">
+          <a href="#" target="">
           <div class="card h-100" style="max-width: 20rem;">
             <div class="card-body">
               <i class="bi bi-folder2"></i>
-              <h5 class="card-title">PORTFOLIO</h5>
-              <p class="card-text">This web-based portfolio was built using React JS to create reusable and custom components, and Tailwind CSS to ensure responsiveness of the design on various screen sizes.</p>
-              <span class="card-link font-monospace mt-auto">React JS, Tailwind CSS</span>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#" target="_blank">
-          <div class="card h-100" style="max-width: 20rem;">
-            <div class="card-body">
-              <i class="bi bi-folder2"></i>
-              <h5 class="card-title">PORTFOLIO</h5>
-              <p class="card-text">This web-based portfolio was built using React JS to create reusable and custom components, and Tailwind CSS to ensure responsiveness of the design on various screen sizes.</p>
+              <h5 class="card-title">More coming soon...</h5>
+              <p class="card-text">I will be adding more of my future projects here soon as I lost some of the ones I made before due to constant reformatting of my pc.</p>
               <span class="card-link font-monospace mt-auto">React JS, Tailwind CSS</span>
             </div>
           </div>
@@ -242,14 +242,26 @@
   </section>
 
   <!-- Contact and footer -->
-  <section>
+  <section id="contact">
     <div class="container">
       <div class="row align-items-center justify-content-between section-margin flex-md-row flex-column-reverse">
         <!-- Contact Left Text -->
         <div class="col-md-7 contact">
           <h1 class="display-3">Have questions or desire to collaborate?</h1>
           <p class="fs-5 fw-semibold">Let me contact you or reach out to me on my email.</p>
-          <form action="#" class="d-flex">
+          
+        </div>
+        <!-- Contact Title -->
+        <div class="col-md-5 justify-content-end align-self-center d-flex mb-3 mb-md-0">
+          <h1 class="contact-title display-5">Keep in touch</h1>
+        </div>
+      </div>
+      <!-- Contact Form and Socials -->
+      <div class="container row m-0">
+        <!-- Email -->
+        <div class="col-md-8">
+        <form action="#" class="d-md-flex d-block">
+          <div class="d-flex">
             <label for="email"></label>
             <input type="email" class="contact-input" id="email" placeholder="Email" name="email">
             <button type="submit" class="mx-3 contact-submit s-button contact-button">
@@ -257,31 +269,43 @@
                 <i class="bi bi-caret-right-fill"></i>
               </div>
             </button>
-        
-            <a href="mailto:dexterkun16@gmail.com" class="s-button contact-button">
-              <div class="contact-icon"><i class="bi bi-google"></i></div>
-              <span>dexterkun16@gmail.com</span>
-            </a>
-            <a href="mailto:dexterkun16@gmail.com" class="s-button contact-button">
-              <div class="contact-icon"><i class="bi bi-instagram"></i></div>
-            </a>
-            <a href="mailto:dexterkun16@gmail.com" class="s-button contact-button">
-              <div class="contact-icon"><i class="bi bi-wordpress"></i></div>
-            </a>
-            <a href="mailto:dexterkun16@gmail.com" class="s-button contact-button">
-              <div class="contact-icon"><i class="bi bi-github"></i></div>
-            </a>
-            <a href="mailto:dexterkun16@gmail.com" class="s-button contact-button">
-              <div class="contact-icon"><i class="bi bi-stack-overflow"></i></div>
-            </a>
+          </div>
 
-          </form>
+          <div class="mt-md-auto mt-3">
+            <a href="mailto:dexterfortbsilva@gmail.com" class="s-button contact-button">
+              <div class="contact-icon"><i class="bi bi-google"></i></div>
+              <span>dexterfortbsilva@gmail.com</span>
+            </a>
+          </div>
+
+        </form>
         </div>
-        <!-- Contact Title -->
-        <div class="col-md-5 justify-content-end align-self-center d-flex mb-3 mb-md-0">
-          <h1 class="contact-title display-5">Keep in touch</h1>
+          <!-- Socials -->
+        <div class="d-flex col-md-4 my-md-0 my-3 justify-content-md-end justify-content-between">
+          <a href="https://www.instagram.com/_4fort/" class="s-button contact-button">
+            <div class="contact-icon"><i class="bi bi-instagram"></i></div>
+          </a>
+          <a href="#" class="s-button contact-button">
+            <div class="contact-icon"><i class="bi bi-wordpress"></i></div>
+          </a>
+          <a href="https://github.com/4fort" class="s-button contact-button">
+            <div class="contact-icon"><i class="bi bi-github"></i></div>
+          </a>
+          <a href="https://stackoverflow.com/users/11174070/dexter-silva" class="s-button contact-button">
+            <div class="contact-icon"><i class="bi bi-stack-overflow"></i></div>
+          </a>
         </div>
+
+        
       </div>
+    </div>
+  </section>
+
+
+  <!-- Redist -->
+  <section>
+    <div class="">
+      <p class="text-center mt-5 fw-semibold copyright">© 2022 Dexter Fort Silva</p>
     </div>
   </section>
 
