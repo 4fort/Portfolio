@@ -148,6 +148,58 @@ a {
     backdrop-filter: saturate(180%) blur(10px);
 }
 
+.navbar-toggler {
+    border: 0!important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none!important;
+    box-shadow: none!important;
+    border: 0!important;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar {
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 13%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 13%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
 .section-margin {
     margin-top: 10rem!important;
 }
@@ -259,14 +311,25 @@ a {
     font-size: 1.8rem;
 }
 
-.s-button:hover {
+.s-button:hover, .s-bigButton:hover {
     transform: translate(-2px, -2px);
     box-shadow: 0px 4px 10px #00000059, 8px 8px var(--secondary-color);
 }
 
-.s-button:active {
+.s-button:active, .s-bigButton:active {
     transform: translate(1.8px, 1.8px);
     box-shadow: 0px 4px 10px #00000059, 1.8px 1.8px var(--secondary-color);
+}
+
+.s-bigButton {
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary-color)!important;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--third-color);
+    box-shadow: var(--s-shadow-1), 5px 5px var(--secondary-color);
+    transition: .1s;
 }
 
 .about-title, .contact-title {

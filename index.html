@@ -15,11 +15,11 @@
   <main class="page-container" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
 
   <!-- Navbar -->
-  <div class="container fixed-top px-md-5" id="navbar">
+  <div class="container-md fixed-top px-md-5" id="navbar">
     <nav class="navbar navbar-expand-md navbar-light">
       <a href="#" class="navbar-brand logo fs-3">Fort <span class="o-text-primary">B.</span></a>
       <button 
-        class="navbar-toggler"
+        class="navbar-toggler collapsed"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#toggleMobileMenu"
@@ -27,7 +27,9 @@
         aria-expanded="false"
         aria-label="Toggle Navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="toggleMobileMenu">
         <ul class="navbar-nav ms-auto text-center">
@@ -49,7 +51,7 @@
   </div>
 
   <!-- Intro/Hero Section -->
-  <section class="text-sm-start" style="padding-top: 300px!important;">
+  <section class="text-sm-start position-relative" style="padding-top: 25vh!important; min-height: 85vh;">
     <div class="container">
       <div class="header-title">
         <p class="hero-header text-capitalize display-1">
@@ -62,8 +64,9 @@
         </p>
       </div>
     </div>
+    <!-- <a href="#" class="s-bigButton m-3 position-absolute">DOWNLOAD CV</a> -->
     <!-- Socials Buttons -->
-    <div class="container mt-5 text-center text-md-start">
+    <div class="container mt-5 p-0 text-center text-md-start position-absolute" style="bottom: 0;">
       <div class="">
         <a href="mailto:dexterfortbsilva@gmail.com" target="_blank" class="s-button m-3"><i class="bi bi-google"></i></a>
         <a href="https://www.instagram.com/_4fort/" target="_blank" class="s-button m-3"><i class="bi bi-instagram"></i></a>
@@ -95,7 +98,7 @@
       <div class="row">
         <!-- Technologies I use -->
         <div class="col-sm">
-          <h3>Technologies I use:</h3>
+          <h3>Technologies I use</h3>
           <ul>
             <li class="list-group-item d-flex justify-content-between align-items-start">
               <p>HTML</p>
@@ -185,7 +188,7 @@
 
         <!-- First Card -->
         <div class="col">
-          <a href="#" target="_blank">
+          <a href="https://github.com/4fort/Portfolio" target="_blank">
           <div class="card h-100" style="max-width: 20rem;">
             <div class="card-body">
               <i class="bi bi-globe"></i>
@@ -223,6 +226,19 @@
           </a>
         </div>
         <!-- Fourth Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/sini-gang" target="_blank">
+          <div class="card h-100" style="max-width: 20rem;">
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">PHP Login System</h5>
+              <p class="card-text">A login system I made with PHP and XAMPP. This is only a project I made to learn PHP</p>
+              <span class="card-link font-monospace mt-auto">PHP, Apache, MySQL</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Fifth Card -->
         <div class="col">
           <a href="#" target="">
           <div class="card h-100" style="max-width: 20rem;">
