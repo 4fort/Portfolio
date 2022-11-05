@@ -111,10 +111,10 @@
     --sixth-color: #76549A;
     --seventh-color: #D9D9D9;
     /* Dark Mode */
-    --dark-primary-color: #5F85DB;
-    --dark-secondary-color: #90B8F8;
-    --dark-third-color: #353941;
-    --dark-fourth-color: #26282B;
+    --dark-primary-color: #685e45;
+    --dark-secondary-color: #797a68;
+    --dark-third-color: #3d3835;
+    --dark-fourth-color: #69695d;
 
     --bg-text-font-size: 8rem;
     --bg-text-font-weight: 700;
@@ -129,10 +129,7 @@ body {
 }
 
 body.dark {
-    --primary-color: #5F85DB;
-    --secondary-color: #90B8F8;
-    --third-color: #353941;
-    --fourth-color: #26282B;
+    background-color: var(--dark-third-color);
 }
 
 p {
@@ -142,6 +139,8 @@ p {
 a {
     text-decoration: none!important;
 }
+
+/* NAVBAR */
 
 #navbar {
     background-color: rgba(255, 252, 248, 0.9);
@@ -200,8 +199,17 @@ a {
     transform: rotate(0);
 }
 
+/* NAVBAR END */
+
+.anchor{
+    display: block;
+    height: inherit;
+    /* margin-top: 20rem; */
+    visibility: hidden;
+}
+
 .section-margin {
-    margin-top: 10rem!important;
+    margin-top: 11rem!important;
 }
 
 .header-title a, .card a, .card-link {
@@ -274,7 +282,7 @@ a {
     padding-right: 15vw;
 }
 
-/* Cursor */
+/* Text Cursor */
 .hero-header::after {
     content: '';
     display: inline-block;
@@ -383,17 +391,20 @@ a {
 }
 
 .progress-bar {
-    animation: animate-positive 2s;
     box-shadow: 0px 4px 8px #00000029;
 }
 
-@-webkit-keyframes animate-positive {
+.progress-bar_animation {
+    animation: progressBar_animation 2s;
+}
+
+@-webkit-keyframes progressBar_animation {
     0%{
         width: 0;
     }
 }
 
-@keyframes animate-positive {
+@keyframes progressBar_animation {
     0%{
         width: 0;
     }
@@ -439,6 +450,8 @@ a {
     width: clamp(20rem, 20rem, 20rem); */
     transition: .1s;
     min-height: 15rem;
+    /* max-width: 20rem!important;
+    min-width: auto!important; */
 }
 
 .card:hover {
@@ -547,3 +560,33 @@ a {
     color: var(--secondary-color);
     font-size: .9rem;
 }
+
+/* ANIMATIONS ON SCROLL */
+
+.bottomHidden, .topHidden, .leftHidden, .rightHidden {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all .8s;
+}
+
+.bottomHidden{ /* direction */
+    transform: translateY(20%);
+}
+.topHidden{ /* direction */
+    transform: translateY(-20%);
+}
+.leftHidden{ /* direction */
+    transform: translateX(-10%);
+}
+.rightHidden{ /* direction */
+    transform: translateX(10%);
+}
+
+.elementShow {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+/* ANIMATIONS ON SCROLL END */

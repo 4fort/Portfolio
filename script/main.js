@@ -35,21 +35,42 @@ document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, newTextDelay);
 });
 
-// document.onscroll = function() {
-//     if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-//         document.querySelector(".progress-bar").style.animation='none';
-//     }
-    
-//     else document.querySelector(".progress-bar").style.animation='';
+// // EMAIL FORM
+
+// const firebaseConfig = {
+//     apiKey: "AIzaSyAjUPnQi4KVTie8lAUivuh-NIro_Tj_bgI",
+//     authDomain: "portfolioemails-5a6fe.firebaseapp.com",
+//     projectId: "portfolioemails-5a6fe",
+//     storageBucket: "portfolioemails-5a6fe.appspot.com",
+//     messagingSenderId: "963607487954",
+//     appId: "1:963607487954:web:27f427f3ca3d86448b140b",
+//     measurementId: "G-GWG7N15WSR"
+//   };
+
+//   // Initialize Firebase
+//   const app = initializeApp(firebaseConfig);
+
+
+// var emailsRef = firebase.database().ref('emails');
+
+// document.getElementById('emailForm').addEventListener('submit', submitEmail);
+
+// function submitEmail(e){
+//     e.preventDefault();
+
+//     var emailInput = getEmail('email');
+
+//     saveEmails(email);
+
 // }
 
+// function getEmail(email){
+//     return document.getElementById(email).value;
+// }
 
-// var nav = document.querySelector('#navbar');
-
-// window.addEventListener('scroll', function () {
-//     if (window.pageYOffset > 50) {
-//         nav.classList.add('fixed-top');
-//     } else {
-//         nav.classList.remove('fixed-top');
-//     }
-// });
+// function saveEmails(email){
+//     var newEmailRef = emailsRef.push();
+//     newEmailRef.set({
+//         email: email
+//     })
+// }

@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #548565;
+  --secondary-color: #94B49F;
+  --third-color: #fffcf8;
+  --fourth-color: #151411;
+  --fifth-color: #DF7861;
+  --sixth-color: #76549A;
+  --seventh-color: #D9D9D9;
+  /* Dark Mode */
+  --dark-primary-color: #685e45;
+  --dark-secondary-color: #797a68;
+  --dark-third-color: #3d3835;
+  --dark-fourth-color: #69695d;
+  --bg-text-font-size: 8rem;
+  --bg-number-font-size: 10rem;
+  --bg-text-font-weight: 700;
+  --bg-text-color: var(--third-color);
+  --s-shadow-1: 0px 4px 8px #00000059;
+}
+
+.projectCard {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.projectCard .projectImage {
+  box-shadow: var(--s-shadow-1), -15px 15px var(--secondary-color);
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+.projectCard .projectImage img {
+  width: 100%;
+  height: auto;
+}
+.projectCard .projectImage .project_id {
+  opacity: 70%;
+  font-size: var(--bg-number-font-size);
+  font-weight: var(--bg-text-font-weight);
+  color: var(--third-color);
+  text-shadow: var(--s-shadow-1);
+  z-index: -999;
+  position: absolute;
+  top: -140px;
+}
+.projectCard .projectInfo {
+  width: 50%;
+  position: relative;
+}
+.projectCard .projectInfo .project_title {
+  font-weight: 700;
+}
+.projectCard .projectInfo .project_desc {
+  padding-top: 20px;
+}
+.projectCard .projectInfo .project_button {
+  height: 130px;
+}
+.projectCard .projectInfo .project_button .project_webButton {
+  background: var(--secondary-color);
+  padding: 13px 20px;
+  color: var(--third-color);
+  transition: all 0.1s;
+  position: relative;
+}
+.projectCard .projectInfo .project_button .project_webButton:hover {
+  transform: translate(4px, 4px);
+}
+.projectCard .projectInfo .project_button .project_webButton:hover::after {
+  right: 0;
+  top: 0;
+}
+.projectCard .projectInfo .project_button .project_webButton::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--secondary-color);
+  height: clamp(0px, 100%, 100%);
+  width: clamp(0px, 100%, 100%);
+  right: -4px;
+  top: 4px;
+  z-index: -999;
+  transition: all 0.1s;
+}
+.projectCard .projectInfo .project_button .project_githubButton {
+  background: var(--secondary-color);
+  padding: 13px 20px;
+  color: var(--third-color);
+  transition: all 0.1s;
+  position: relative;
+}
+.projectCard .projectInfo .project_button .project_githubButton:hover {
+  transform: translate(4px, 4px);
+}
+.projectCard .projectInfo .project_button .project_githubButton:hover::after {
+  right: 0;
+  top: 0;
+}
+.projectCard .projectInfo .project_button .project_githubButton::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--secondary-color);
+  height: clamp(0px, 100%, 100%);
+  width: clamp(0px, 100%, 100%);
+  right: -4px;
+  top: 4px;
+  z-index: -999;
+  transition: all 0.1s;
+}
+.projectCard .projectInfo .project_techs {
+  color: var(--primary-color);
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}/*# sourceMappingURL=projects.css.map */

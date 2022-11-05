@@ -1,0 +1,105 @@
+
+        <!-- First Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/Portfolio" target="_blank">
+          <div class="card h-100" >
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">My Portfolio</h5>
+              <p class="card-text">A web-based portfolio built with Bootstrap for a responsive design on various screen sizes. Made with love by me.</p>
+              <span class="card-link font-monospace mt-auto">Bootstrap 5.2</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Second Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/taclobonationahighscool" target="_blank">
+          <div class="card h-100" >
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">School Website (unfinished)</h5>
+              <p class="card-text">This Website is a school activity that was tasked to us ICT students. Unfortunately due to the pandemic i wasn't able to finish this.</p>
+              <span class="card-link font-monospace mt-auto">Jquery</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Third Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/sini-gang" target="_blank">
+          <div class="card h-100" >
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title">Sini-gang</h5>
+              <p class="card-text">A restaurant website I made to practice Bootstrap.</p>
+              <span class="card-link font-monospace mt-auto">Bootstrap 5.2</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Fourth Card -->
+        <div class="col">
+          <a href="https://github.com/4fort/Login-System" target="_blank">
+          <div class="card h-100" >
+            <div class="card-body">
+              <i class="bi bi-hdd-stack"></i>
+              <h5 class="card-title">PHP Login System</h5>
+              <p class="card-text">A login system I made with PHP and XAMPP. This is only a project I made to learn PHP</p>
+              <span class="card-link font-monospace mt-auto">PHP, Apache, MySQL</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- Fifth Card -->
+        <div class="col">
+          <a href="#" target="">
+          <div class="card h-100" >
+            <div class="card-body">
+              <i class="bi bi-folder2"></i>
+              <h5 class="card-title">More coming soon...</h5>
+              <p class="card-text">I will be adding more of my future projects here soon as I lost some of the ones I made before due to constant reformatting of my pc.</p>
+              <span class="card-link font-monospace mt-auto">HTML, CSS, Javascript</span>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </li>
+         <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>Bootstrap</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>Php</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <p>ReactJS</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+          </li>
