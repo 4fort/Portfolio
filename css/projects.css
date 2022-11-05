@@ -26,6 +26,7 @@
 .projectCard .projectImage {
   box-shadow: var(--s-shadow-1), -15px 15px var(--secondary-color);
   width: 50%;
+  height: 25%;
   position: relative;
   display: flex;
 }

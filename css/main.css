@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #548565;
+  --secondary-color: #94B49F;
+  --third-color: #fffcf8;
+  --fourth-color: #151411;
+  --fifth-color: #DF7861;
+  --sixth-color: #76549A;
+  --seventh-color: #D9D9D9;
+  /* Dark Mode */
+  --dark-primary-color: #685e45;
+  --dark-secondary-color: #797a68;
+  --dark-third-color: #3d3835;
+  --dark-fourth-color: #69695d;
+  --bg-text-font-size: 8rem;
+  --bg-text-font-weight: 700;
+  --bg-text-color: var(--third-color);
+  --s-shadow-1: 0px 4px 8px #00000059;
+}
+
+body {
+  background-color: var(--third-color) !important;
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+body p {
+  color: #000;
+}
+body a {
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: rgba(255, 252, 248, 0.9);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+          backdrop-filter: saturate(180%) blur(10px);
+}
+#navbar .navbar-toggler {
+  border: 0 !important;
+}
+#navbar .navbar-toggler .navbar-toggler:focus,
+#navbar .navbar-toggler .navbar-toggler:active,
+#navbar .navbar-toggler .navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}/*# sourceMappingURL=main.css.map */

@@ -31,7 +31,7 @@ const projList =
         position: ``,
         img: `images/sinigang (Custom).png`,
         web: `https://4fort.github.io/sini-gang/`,
-        url: `"https://github.com/4fort/sini-gang`,
+        url: `https://github.com/4fort/sini-gang`,
         target: `_blank`,
         icon: `bi bi-globe`,
         title: `Sini-gang`,
@@ -98,14 +98,18 @@ for(let i = 0; i <= projLength; i++) {
     
 }
 
-const projectDisplay = () => {
-    projList.map(e => {
-        const projectButton = document.getElementsByClassName('project_webButton');
-        if(e.web == null){
-            projectButton.style.display = 'none';
-        }
+// console.log(projList[1].web);
+const projectWebButton = document.getElementsByClassName('project_webButton');
 
-        return projectContainer.innerHTML += `
+const projectDisplay = () => {
+    // Array.from(projectWebButton).forEach(el => {
+    //     console.log(el);
+    //     el.style.display = 'none';
+    // })
+    
+    projList.forEach(e => {
+
+        projectContainer.innerHTML += `
         <div class="projectCard d-md-flex justify-content-center gap-3 ${e.position}">
             <div class="projectImage flex-shrink-0">
             <span class="project_id">${e.id}</span>
@@ -116,9 +120,12 @@ const projectDisplay = () => {
                 <div class="project_desc">${e.desc}</div>
                 <div class="project_button d-flex align-items-center gap-2">
                     <a href="${e.web}" target="${e.target}" class="project_webButton">
-                    <i class="${e.icon} pe-2"></i>Website
+                        <i class="${e.icon} pe-2"></i>
+                        Website
                     </a>
-                    <a href="${e.url}" target="${e.target}" class="project_githubButton"><i class="bi bi-github pe-2"></i>Github
+                    <a href="${e.url}" target="${e.target}" class="project_githubButton">
+                        <i class="bi bi-github pe-2"></i>
+                        Github
                     </a>
                 </div>
                 <span class="project_techs font-monospace">${e.techs}</span>

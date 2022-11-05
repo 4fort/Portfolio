@@ -29,15 +29,20 @@
     position: relative;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    
     .projectImage {
         @include boxDesign();
+
         width: 50%;
+        height: 25%;
         position: relative;
         display: flex;
+
         img {
             width: 100%;
             height: auto;
         }
+        
         .project_id {
             opacity: 70%;
             font-size: var(--bg-number-font-size);
@@ -49,6 +54,7 @@
             top: -140px;
         }
     }
+
     .projectInfo {
         width: 50%;
         position: relative;
