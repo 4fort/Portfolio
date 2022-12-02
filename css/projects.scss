@@ -33,7 +33,7 @@
     .projectImage {
         @include boxDesign();
 
-        width: 50%;
+        // width: 50%;
         height: 25%;
         position: relative;
         display: flex;
@@ -43,16 +43,22 @@
             height: auto;
         }
         
-        .project_id {
-            opacity: 70%;
-            font-size: var(--bg-number-font-size);
-            font-weight: var(--bg-text-font-weight);
-            color: var(--third-color);
-            text-shadow: var(--s-shadow-1);
-            z-index: -999;
-            position: absolute;
-            top: -140px;
-        }
+    }
+
+    .project_id {
+        opacity: 70%;
+        font-size: var(--bg-number-font-size);
+        font-weight: var(--bg-text-font-weight);
+        color: var(--third-color);
+        text-shadow: var(--s-shadow-1);
+        z-index: -999;
+        position: absolute;
+        top: -30px;
+        left: -50px;
+    }
+    .left {
+        left: auto;
+        right: -50px;
     }
 
     .projectInfo {

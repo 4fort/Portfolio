@@ -65,7 +65,7 @@ const projList =
     {
         id: '',
         position: ``,
-        img: `images/github.png`,
+        img: `images/github (Custom).png`,
         web: ``,
         url: `https://github.com/4fort`,
         target: ``,
@@ -82,14 +82,14 @@ for(let i = 0; i <= projLength; i++) {
     if(i.toString().length == 1) projList[i].id = '0' + i;
     
     if(i % 2 !=0){
-        projList[i].position = 'flex-row-reverse';
+        projList[i].position = 'flex-row-reverse leftHidden';
 
         project_id.forEach(e => {
             e.style.right = '-20px';
         })
     }
     else{
-        projList[i].position = 'left';
+        projList[i].position = 'left rightHidden';
         
         project_id.forEach(e => {
             e.style.left = '-80px';
@@ -111,8 +111,8 @@ const projectDisplay = () => {
 
         projectContainer.innerHTML += `
         <div class="projectCard d-md-flex justify-content-center gap-3 ${e.position}">
+            <span class="project_id ${e.position}">${e.id}</span>
             <div class="projectImage flex-shrink-0">
-            <span class="project_id">${e.id}</span>
                 <img src="${e.img}" width="684" height="355" alt="">
             </div>
             <div class="projectInfo flex-grow-1 mx-1">

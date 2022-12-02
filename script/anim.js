@@ -32,8 +32,8 @@ function aos(){
 aos();
 
 function skillBar(){
-    const observer = new IntersectionObserver ((bars) => {
-        bars.forEach((bar) => {
+    const observer = new IntersectionObserver ((e) => {
+        e.forEach((bar) => {
             // console.log('bar')
             if(bar.isIntersecting) {
                 bar.target.classList.add('progress-bar_animation');

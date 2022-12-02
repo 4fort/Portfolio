@@ -570,16 +570,16 @@ a {
 }
 
 .bottomHidden{ /* direction */
-    transform: translateY(20%);
+    transform: translateY(10%);
 }
 .topHidden{ /* direction */
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 .leftHidden{ /* direction */
-    transform: translateX(-10%);
+    transform: translateX(-5%);
 }
 .rightHidden{ /* direction */
-    transform: translateX(10%);
+    transform: translateX(5%);
 }
 
 .elementShow {

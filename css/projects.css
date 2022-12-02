@@ -25,7 +25,6 @@
 }
 .projectCard .projectImage {
   box-shadow: var(--s-shadow-1), -15px 15px var(--secondary-color);
-  width: 50%;
   height: 25%;
   position: relative;
   display: flex;
@@ -34,7 +33,7 @@
   width: 100%;
   height: auto;
 }
-.projectCard .projectImage .project_id {
+.projectCard .project_id {
   opacity: 70%;
   font-size: var(--bg-number-font-size);
   font-weight: var(--bg-text-font-weight);
@@ -42,7 +41,12 @@
   text-shadow: var(--s-shadow-1);
   z-index: -999;
   position: absolute;
-  top: -140px;
+  top: -30px;
+  left: -50px;
+}
+.projectCard .left {
+  left: auto;
+  right: -50px;
 }
 .projectCard .projectInfo {
   width: 50%;
