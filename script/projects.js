@@ -38,18 +38,18 @@ const projList =
         desc: `A restaurant website I made to practice Bootstrap.`,
         techs: `HTML, CSS, JS, Bootstrap 5.2`
     },
-    {
-        id: '',
-        position: ``,
-        img: `images/loginsystem (Custom).png`,
-        web: ``,
-        url: `https://github.com/4fort/Login-System`,
-        target: `_blank`,
-        icon: `bi bi-hdd-stack`,
-        title: `PHP Login System`,
-        desc: `A login system I made with PHP and XAMPP. This is only a project I made to learn PHP.`,
-        techs: `PHP, Apache, MySQL`
-    },
+    // {
+    //     id: '',
+    //     position: ``,
+    //     img: `images/loginsystem (Custom).png`,
+    //     web: ``,
+    //     url: `https://github.com/4fort/Login-System`,
+    //     target: `_blank`,
+    //     icon: `bi bi-hdd-stack`,
+    //     title: `PHP Login System`,
+    //     desc: `A login system I made with PHP and XAMPP. This is only a project I made to learn PHP.`,
+    //     techs: `PHP, Apache, MySQL`
+    // },
     {
         id: '',
         position: ``,
